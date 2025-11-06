@@ -6,7 +6,7 @@ public class H1_main {
         double monEingang = 200;
         int rating = -2;
         boolean warnhinweis;
-        boolean negativ = true;
+        boolean negativ;
 
         //Ist der Wert von guthaben echt kleiner als 0, so muss der Wert von negativ auf true
         //gesetzt werden, sonst auf false:

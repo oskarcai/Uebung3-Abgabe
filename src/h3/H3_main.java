@@ -5,8 +5,7 @@ public class H3_main {
         int max = 5;
         int fix = 2;
         int wartend = 4;
-        boolean istVoll = false;
-
+        boolean istVoll;
         int freieFixplätze = max - fix;
 
         //Wenn noch Fixplätze frei sind (max - fix > 0)
@@ -25,7 +24,7 @@ public class H3_main {
                 wartend -= freieFixplätze;
             }
         }
-        //Boolean true, wenn Fixplätze >= maximaler Fixplatzanzahl bzw. wenn freieFixplätze = 0:
+        //Boolean istVoll = true, wenn Fixplätze >= maximaler Fixplatzanzahl bzw. wenn freieFixplätze == 0, ansonsten Boolean istVoll = false:
         istVoll = fix >= max;
 
         System.out.println("Maximale Fixplätze:" + max);
