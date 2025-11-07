@@ -2,10 +2,10 @@ package h2;
 
 public class H2_main {
     public static void main(String[] args) {
-        int jahr = 2028;
+        int jahr = 3200;
         boolean schalt = true;
 
-        //Wenn das Jahr durch 4 teilbar -> Schaltjahr:
+        //Wenn das Jahr durch 4 teilbar ist (also auch durch 400) -> Schaltjahr:
         if(jahr%4 == 0) {
             schalt = true;
             //Wenn das Jahr durch 100 teilbar ist UND nicht durch 400 teilbar ist -> Kein Schaltjahr:

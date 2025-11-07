@@ -5,12 +5,16 @@ public class H1_main {
         double guthaben = -100;
         double monEingang = 200;
         int rating = -2;
-        boolean warnhinweis;
-        boolean negativ;
+        boolean warnhinweis = true;
+        boolean negativ = true;
 
         //Ist der Wert von guthaben echt kleiner als 0, so muss der Wert von negativ auf true
         //gesetzt werden, sonst auf false:
-        negativ = guthaben < 0;
+        if(guthaben < 0) {
+            negativ = true;
+        } else {
+            negativ = false;
+        }
 
         //Ist der Wert von guthaben echt größer als 0, so wird auf den Startwert von rating der
         //Wert 3 addiert:
@@ -27,11 +31,11 @@ public class H1_main {
         //Betrag definieren:
         double betrag_von_monEingang = monEingang;
         if(betrag_von_monEingang < 0) {
-            betrag_von_monEingang *= -1;
+            betrag_von_monEingang = monEingang * -1;
         }
         double betrag_von_guthaben = guthaben;
         if(betrag_von_guthaben < 0) {
-            betrag_von_guthaben *= -1;
+            betrag_von_guthaben = guthaben * -1;
         }
 
         //Ist der Wert von guthaben echt kleiner als 0, und der Wert von monEingang im Betrag
@@ -57,7 +61,7 @@ public class H1_main {
             warnhinweis = false;
         }
 
-    System.out.println("Boolean negativ: " + negativ + " Integer rating: " + rating + " Boolean warnhinweis: " + warnhinweis);
+    System.out.println("NEGATIV: " + negativ + " RATING: " + rating + " WARNHINWEIS: " + warnhinweis);
 
     }
 }
